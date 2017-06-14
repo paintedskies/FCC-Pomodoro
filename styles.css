@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body{
+	
+	background-color: #f40000;
+}
+
+*{
+	color: #f9dbbd;
+	background-color:#f40000;
+	font-family:"Roboto";
+	font-weight:300;
+
+}
+h1{
+	font-size:50px;
+}
+.wrapper{
+	width:80%;
+	text-align:center;
+	margin:0 auto;
+}
+#break, #pomodoro{
+	display:inline-block;
+	margin:40px;
+
+}
+button{
+	font-size:20px;
+	border: 1.5px solid #f9dbbd;
+	cursor:pointer;
+	margin:10px;
+	transition: all ease-in 0.1s;
+
+}
+button:hover{
+	transform:scale(1.1);
+}
+
+input{
+	height:70px;
+	width:70px;
+	background-color:#f9dbbd;
+	color:#f40000;
+	border-radius:100px;
+	border: 2px solid #f9dbbd;
+	text-align:center;
+	font-size:30px;
+}
+
+#break button, #pomodoro button{
+	height:30px;
+	width: 30px;
+	border-radius:15px;
+}
+.wrapper .timer{
+	background-color:#f9dbbd;
+	width:300px;
+	border-radius:200px;
+	padding-top:100px;
+	margin:0 auto;
+	height:200px;
+	position:relative;
+	border:1px solid #f9dbbd;
+}
+.timer::after{
+	top:2px;
+	left:2px;
+	right:2px;
+	bottom: 2px;
+	border-radius:200px;
+	position:absolute;
+	content: " ";
+	border:2px solid #f40000;
+}
+.timer p, .timer span{
+	background-color:rgba(0,0,0,0);
+	margin:0;
+	color:#f40000;
+}
+#current-time{
+	font-size:60px;
+}
+#message{
+	font-size:18px;
+	margin:0;
+}
+
+#controls{
+	margin:20px;
+}
+
+#controls button{
+	height:40px;
+	width:100px;
+	border-radius:15px;
+	font-size:20px;
+}
